@@ -1,5 +1,9 @@
 import { getTranslations } from "next-intl/server";
-import { Container } from "@/components/layout/Container";
+import { hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { Header } from "@/components/layout/Header";
+import { Hero } from "@/components/sections/Hero";
+import { routing } from "@/i18n/routing";
 
 type HomePageProps = {
   params: Promise<{ locale: string }>;
@@ -7,23 +11,39 @@ type HomePageProps = {
 
 export default async function HomePage({ params }: HomePageProps) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Foundation" });
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
+  const header = await getTranslations({ locale, namespace: "Header" });
+  const hero = await getTranslations({ locale, namespace: "Hero" });
 
   return (
-    <main className="min-h-screen py-16 sm:py-20">
-      <Container>
-        <div className="max-w-2xl">
-          <p className="font-mono text-xs tracking-[0.16em] text-accent uppercase">
-            {t("subtitle")}
-          </p>
-          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            {t("title")}
-          </h1>
-          <p className="mt-3 font-mono text-xs tracking-[0.16em] text-foreground-secondary uppercase">
-            {t("locale", { locale })}
-          </p>
-        </div>
-      </Container>
-    </main>
+    <>
+      <Header locale={locale} labels={{
+        about: header("about"),
+        brandRole: header("brandRole"),
+        contact: header("contact"),
+        experience: header("experience"),
+        expertise: header("expertise"),
+        localeNavigation: header("localeNavigation"),
+        resume: header("resume"),
+        work: header("work"),
+      }} />
+      <main>
+        <Hero labels={{
+          availability: hero("availability"),
+          contact: hero("contact"),
+          description: hero("description"),
+          github: hero("github"),
+          linkedin: hero("linkedin"),
+          resume: hero("resume"),
+          role: hero("role"),
+          selectedWork: hero("selectedWork"),
+          statement: hero("statement"),
+        }} />
+      </main>
+    </>
   );
 }

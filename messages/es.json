@@ -1,8 +1,24 @@
 {
-  "Foundation": {
-    "title": "Kevin Cotrina",
-    "subtitle": "Base del portafolio",
-    "locale": "Idioma: {locale}"
+  "Header": {
+    "brandRole": "Senior Full Stack Engineer",
+    "work": "Proyectos",
+    "experience": "Experiencia",
+    "expertise": "Especialidad",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "resume": "Currículum (EN)",
+    "localeNavigation": "Idioma"
+  },
+  "Hero": {
+    "availability": "Disponible para oportunidades remotas en todo el mundo",
+    "role": "Senior Full Stack Engineer",
+    "statement": "Creo productos web escalables en frontend y backend.",
+    "description": "Más de 5 años creando aplicaciones web en producción, arquitecturas frontend escalables y APIs backend. Experiencia integral con enfoque en mantenibilidad y escalabilidad a largo plazo.",
+    "selectedWork": "Ver proyectos destacados",
+    "contact": "Contactar",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "resume": "Currículum (EN)"
   },
   "Metadata": {
     "title": "Kevin Cotrina — Senior Full Stack Engineer",

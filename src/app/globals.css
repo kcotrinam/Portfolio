@@ -25,8 +25,13 @@
 
 body {
   min-height: 100vh;
-  background: var(--color-background);
+  background: color-mix(in srgb, var(--color-background) 65%, black);
   color: var(--color-foreground);
   font-family: var(--font-sans), sans-serif;
   text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-accent-strong);
+  color: var(--color-foreground);
 }
