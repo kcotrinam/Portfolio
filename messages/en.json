@@ -66,6 +66,20 @@
       }
     }
   },
+  "Expertise": {
+    "sectionLabel": "03 / Expertise",
+    "heading": "Stack & Capabilities",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "engineering": "Engineering & Architecture"
+    },
+    "capabilities": {
+      "scalableFrontendArchitecture": "Scalable Frontend Architecture",
+      "testingAndTdd": "Testing & TDD",
+      "aiAssistedDevelopment": "AI-Assisted Development"
+    }
+  },
   "Metadata": {
     "title": "Kevin Cotrina — Senior Full Stack Engineer",
     "description": "Kevin Cotrina is a Senior Full Stack Engineer building reliable, thoughtful web experiences."
