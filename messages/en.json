@@ -80,6 +80,15 @@
       "aiAssistedDevelopment": "AI-Assisted Development"
     }
   },
+  "About": {
+    "sectionLabel": "04 / About",
+    "heading": "Background & Philosophy",
+    "background": "I'm a Full Stack Engineer based in Lima, Peru, with 5+ years of experience building production web products. My work spans frontend architecture, APIs, and backend services, with a particular interest in scalable frontend systems and reusable foundations.",
+    "philosophy": "I care about software that remains understandable and maintainable as products grow. I value clear abstractions, reusable solutions, and engineering decisions that avoid unnecessary complexity.",
+    "educationLabel": "Academic foundation",
+    "educationDegree": "Cybersecurity Engineering",
+    "educationStatus": "Cibertec · Currently studying"
+  },
   "Metadata": {
     "title": "Kevin Cotrina — Senior Full Stack Engineer",
     "description": "Kevin Cotrina is a Senior Full Stack Engineer building reliable, thoughtful web experiences."

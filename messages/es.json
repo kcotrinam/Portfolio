@@ -80,6 +80,15 @@
       "aiAssistedDevelopment": "Desarrollo asistido por IA"
     }
   },
+  "About": {
+    "sectionLabel": "04 / Sobre mí",
+    "heading": "Trayectoria y filosofía",
+    "background": "Soy Full Stack Engineer en Lima, Perú, con más de 5 años de experiencia desarrollando productos web en producción. He trabajado en arquitectura frontend, APIs y servicios backend, con especial interés en sistemas frontend escalables y componentes reutilizables.",
+    "philosophy": "Me importa que el software siga siendo comprensible y mantenible a medida que los productos crecen. Valoro las abstracciones claras, las soluciones reutilizables y las decisiones de ingeniería que evitan la complejidad innecesaria.",
+    "educationLabel": "Formación académica",
+    "educationDegree": "Ingeniería de Ciberseguridad",
+    "educationStatus": "Cibertec · Actualmente estudiando"
+  },
   "Metadata": {
     "title": "Kevin Cotrina — Senior Full Stack Engineer",
     "description": "Kevin Cotrina es un Senior Full Stack Engineer que crea experiencias web confiables y cuidadas."
