@@ -1,6 +1,8 @@
 import { getPathname } from "@/i18n/navigation";
 import { socialLinks } from "@/data/social-links";
 import { Container } from "./Container";
+import { KCGraphic } from "./KCGraphic";
+import { MobileNavigation } from "./MobileNavigation";
 
 type HeaderProps = {
   locale: "en" | "es";
@@ -13,6 +15,9 @@ type HeaderProps = {
     contact: string;
     resume: string;
     localeNavigation: string;
+    navigation: string;
+    openMenu: string;
+    closeMenu: string;
   };
 };
 
@@ -31,20 +36,23 @@ export function Header({ locale, labels }: HeaderProps) {
 
   return (
     <header className="border-b border-border">
-      <Container className="grid h-20 grid-cols-[1fr_auto_1fr] items-center">
+      <Container className="relative grid min-h-20 grid-cols-[1fr_auto] grid-rows-[5rem_auto] items-center xl:h-20 xl:grid-cols-[1fr_auto_1fr] xl:grid-rows-1">
         <a
-          className="justify-self-start leading-none text-foreground transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+          className="flex items-center gap-3 justify-self-start leading-none text-foreground transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent xl:block"
           href={homePath}
         >
-          <span className="block text-[1.1rem] font-semibold tracking-[-0.035em]">
-            Kevin Cotrina
-          </span>
-          <span className="mt-1 block font-mono text-[0.625rem] font-medium tracking-[0.14em] text-foreground-muted uppercase">
-            {labels.brandRole}
+          <KCGraphic className="size-10 shrink-0 xl:hidden" />
+          <span className="block">
+            <span className="block text-[1.1rem] font-semibold tracking-[-0.035em]">
+              Kevin Cotrina
+            </span>
+            <span className="mt-1 block font-mono text-[0.625rem] font-medium tracking-[0.14em] text-foreground-muted uppercase">
+              {labels.brandRole}
+            </span>
           </span>
         </a>
 
-        <nav aria-label="Primary navigation" className="flex items-center gap-7">
+        <nav aria-label={labels.navigation} className="hidden items-center gap-7 xl:flex">
           {navigation.map(({ key, href }) => (
             <a
               className="text-[0.9375rem] font-medium text-foreground-secondary transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
@@ -56,7 +64,7 @@ export function Header({ locale, labels }: HeaderProps) {
           ))}
         </nav>
 
-        <div className="flex items-center justify-self-end gap-5">
+        <div className="hidden items-center justify-self-end gap-5 xl:flex">
           <nav aria-label={labels.localeNavigation} className="flex items-center gap-2 font-mono text-[0.6875rem] font-medium tracking-[0.08em] uppercase">
             <a
               aria-current={locale === "en" ? "page" : undefined}
@@ -106,6 +114,20 @@ export function Header({ locale, labels }: HeaderProps) {
             </svg>
           </a>
         </div>
+        <MobileNavigation
+          items={navigation.map(({ key, href }) => ({ href, label: labels[key] }))}
+          locale={locale}
+          englishHomePath={englishHomePath}
+          spanishHomePath={spanishHomePath}
+          resumePath={socialLinks.resume}
+          labels={{
+            closeMenu: labels.closeMenu,
+            localeNavigation: labels.localeNavigation,
+            navigation: labels.navigation,
+            openMenu: labels.openMenu,
+            resume: labels.resume,
+          }}
+        />
       </Container>
     </header>
   );

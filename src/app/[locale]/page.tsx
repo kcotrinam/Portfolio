@@ -28,6 +28,9 @@ export default async function HomePage({ params }: HomePageProps) {
         experience: header("experience"),
         expertise: header("expertise"),
         localeNavigation: header("localeNavigation"),
+        navigation: header("navigation"),
+        openMenu: header("openMenu"),
+        closeMenu: header("closeMenu"),
         resume: header("resume"),
         work: header("work"),
       }} />

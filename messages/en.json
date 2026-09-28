@@ -7,7 +7,10 @@
     "about": "About",
     "contact": "Contact",
     "resume": "Résumé",
-    "localeNavigation": "Language"
+    "localeNavigation": "Language",
+    "navigation": "Primary navigation",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
   },
   "Hero": {
     "availability": "Available for remote opportunities worldwide",
