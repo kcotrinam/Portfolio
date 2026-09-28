@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/Hero";
 import { SelectedWork } from "@/components/sections/SelectedWork";
+import { EngineeringStories } from "@/components/sections/EngineeringStories";
 import { routing } from "@/i18n/routing";
 
 type HomePageProps = {
@@ -48,6 +49,7 @@ export default async function HomePage({ params }: HomePageProps) {
           statement: hero("statement"),
         }} />
         <SelectedWork locale={locale} />
+        <EngineeringStories locale={locale} />
       </main>
     </>
   );

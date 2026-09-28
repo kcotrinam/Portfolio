@@ -41,6 +41,31 @@
       }
     }
   },
+  "EngineeringStories": {
+    "sectionLabel": "02 / Experience",
+    "heading": "Engineering Stories",
+    "intro": "A selection of engineering problems I've worked on in production systems.",
+    "stories": {
+      "stateManagement": {
+        "context": "Globant · Kargo client work",
+        "title": "Scaling Frontend State Management",
+        "description": "As frontend state grew more complex, I traced unnecessary re-renders to the existing approach. I proposed centralized state with Redux Toolkit, validated it through an MVP, and helped the team adopt the approved approach.",
+        "focus": "Frontend Architecture · State Management"
+      },
+      "advertisingFeatures": {
+        "context": "Globant · Kargo client work",
+        "title": "Building Flexible Advertising Features",
+        "description": "I worked across frontend and backend on advertising features involving multiple assets, extending data structures and API behavior where needed. I also built reusable React hooks for asset handling and shared tracking logic.",
+        "focus": "Full Stack · API Design · Reusable React Patterns"
+      },
+      "productionReliability": {
+        "context": "Ravn",
+        "title": "Production Debugging & System Reliability",
+        "description": "I investigated an intermittent production issue linked to a scheduled background job. Inconsistent database values could trigger unhandled API errors; I traced the cause and implemented a permanent fix.",
+        "focus": "Production Debugging · Reliability"
+      }
+    }
+  },
   "Metadata": {
     "title": "Kevin Cotrina — Senior Full Stack Engineer",
     "description": "Kevin Cotrina is a Senior Full Stack Engineer building reliable, thoughtful web experiences."
