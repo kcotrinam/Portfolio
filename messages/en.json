@@ -23,6 +23,24 @@
     "linkedin": "LinkedIn",
     "resume": "Résumé"
   },
+  "SelectedWork": {
+    "sectionLabel": "01 / Work",
+    "heading": "Selected Work",
+    "status": "In development",
+    "stack": "Tech stack",
+    "comingSoon": "Coming soon",
+    "viewProject": "View project",
+    "projects": {
+      "cashtracker": {
+        "productType": "Personal finance management product",
+        "description": "A personal finance app being built to organize monthly income and expenses, including fixed and variable income and recurring costs."
+      },
+      "popcornTime": {
+        "productType": "Media wishlist and discovery product",
+        "description": "A personal project for organizing movies and TV shows to watch, with collections and sharing features planned."
+      }
+    }
+  },
   "Metadata": {
     "title": "Kevin Cotrina — Senior Full Stack Engineer",
     "description": "Kevin Cotrina is a Senior Full Stack Engineer building reliable, thoughtful web experiences."
