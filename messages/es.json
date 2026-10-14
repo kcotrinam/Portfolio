@@ -89,6 +89,19 @@
     "educationDegree": "Ingeniería de Ciberseguridad",
     "educationStatus": "Cibertec · Actualmente estudiando"
   },
+  "Contact": {
+    "sectionLabel": "05 / Contacto",
+    "heading": "Construyamos algo juntos.",
+    "description": "Actualmente estoy disponible para oportunidades remotas de ingeniería Full Stack en todo el mundo.",
+    "email": "Envíame un correo",
+    "resume": "Descargar currículum (EN)",
+    "linksLabel": "Otras formas de contacto"
+  },
+  "Footer": {
+    "availability": "Disponible para oportunidades remotas en todo el mundo",
+    "location": "Lima, Perú",
+    "copyright": "© {year} Kevin Cotrina. Todos los derechos reservados."
+  },
   "Metadata": {
     "title": "Kevin Cotrina — Senior Full Stack Engineer",
     "description": "Kevin Cotrina es un Senior Full Stack Engineer que crea experiencias web confiables y cuidadas."
